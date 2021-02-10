@@ -10,35 +10,85 @@ body {
 }
 
 /* navigation */
-.navbar {
-	height: 56px;
+nav.nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
 	background-color: transparent;
+	z-index: 9999;
+	padding: 5px 10px 5px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
+
+.nav .nav_menu {
+	list-style-type: none;
+}
+
+.nav .nav_items {
+	display: inline-block;
+}
+
+.nav .nav_items a {
+	color: #F8F8F8;
+	text-transform: uppercase;
+}
+
 
 
 /* main block */
 
-.main__item {
+.main_block {
 	min-height: 100vh;
-}
-
-.main__item.main__item_text {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-}
-
-.main__item.main__item_hero {
-	display: flex;
-	align-items: flex-end;
 	justify-content: center;
 	background-image: url('../images/hero/hero_bg_2.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 
+.main_item.main_text {
+	color: #F8F8F8;
+	padding: 0 1rem 0 1rem;
+}
+
+.main_item.main_text h2 {
+	text-align: left;
+	font-size: 2.2rem;
+}
+
+.main_item.main_text h1 {
+	padding-top: 1rem;
+	font-size: 3rem;
+}
+
+.main_item.main_text p {
+	font-size: 1.1rem;
+	margin: 2rem 0 2rem 0;
+}
+
+.main__btn {
+	padding-top: 3rem;
+	text-align: center;
+}
+
+.main__btn .hire-me-btn {
+	margin-top: 2rem;
+	padding: 15px 20px 15px 20px;
+	background-color: #F8F8F8;
+	color: #00387a;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+}
+
+.main_item.main_hero.hero__hidden {
+	display: none;
+}
+
 .hero-img {
-	width: 110%;
+	width: 100%;
 	height: auto;
 }
 
